@@ -79,3 +79,18 @@ let another_person = {
 // Adding another person object to the end of the new table array
 newTable.push(another_person)
 
+//Declaring and initializing Ages variable with value of 0
+let ages = 0;
+
+//Loop to add all ages together
+for (i = 0; i < newTable.length; i++) {
+    /* 
+    adding every value of age in the new table array
+    to the ages variable every iteration
+    */ 
+    ages += Number(newTable[i].age);
+
+    // Logging a visual of what occurs within the loop
+    console.log(ages)
+}
+
