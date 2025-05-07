@@ -53,3 +53,17 @@ console.log(table);
 
 // Log transformed array to console
 console.log(newTable);
+
+// Remove last entry from transformed array
+newTable.pop();
+
+// New person object created
+let new_person = {
+    id: '48',
+    name: 'Barry',
+    occupation: 'Runner',
+    age: '25'
+};
+
+// Inserting new person object into the new table array at index 1
+newTable.splice(1, 0, new_person);
