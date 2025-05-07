@@ -74,10 +74,10 @@ let another_person = {
     name: 'Bilbo',
     occupation: 'none',
     age: '111'
-}
+};
 
 // Adding another person object to the end of the new table array
-newTable.push(another_person)
+newTable.push(another_person);
 
 //Declaring and initializing Ages variable with value of 0
 let ages = 0;
@@ -91,6 +91,11 @@ for (i = 0; i < newTable.length; i++) {
     ages += Number(newTable[i].age);
 
     // Logging a visual of what occurs within the loop
-    console.log(ages)
+    console.log(ages);
 }
 
+// Take the sum of all ages and divide them by the # of ages in the array
+let avgAge = (ages/newTable.length);
+
+// Logs the average age to the console
+console.log(avgAge);
