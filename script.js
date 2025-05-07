@@ -67,3 +67,15 @@ let new_person = {
 
 // Inserting new person object into the new table array at index 1
 newTable.splice(1, 0, new_person);
+
+// Creating another person object
+let another_person = {
+    id: '7',
+    name: 'Bilbo',
+    occupation: 'none',
+    age: '111'
+}
+
+// Adding another person object to the end of the new table array
+newTable.push(another_person)
+
