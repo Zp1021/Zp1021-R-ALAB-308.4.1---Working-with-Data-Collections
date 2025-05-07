@@ -13,7 +13,6 @@ let row = []
 
 for (let i = 0; i < csv.length; i++) {
 	let char = csv[i] 
-	console.log(char)
 
 	if (char !== ',' && char !== '\n') {
 		cell = cell + char
@@ -32,10 +31,10 @@ for (let i = 0; i < csv.length; i++) {
 	}
 }
 
-console.log(table)
-
-
 // Code from this point onward is created in attempts to solve Parts 3 & 4 of the same lab
+
+// Create an empty array with name newTable
+let newTable = [];
 
 // Loop to populate array with objects listed 
 for (let i = 1; i< table.length; i++) {
@@ -48,3 +47,9 @@ for (let i = 1; i< table.length; i++) {
     }
     newTable.push(obj);
 }
+
+// Log untransformed array to console
+console.log(table);
+
+// Log transformed array to console
+console.log(newTable);
