@@ -36,3 +36,15 @@ console.log(table)
 
 
 // Code from this point onward is created in attempts to solve Parts 3 & 4 of the same lab
+
+// Loop to populate array with objects listed 
+for (let i = 1; i< table.length; i++) {
+
+    let obj = {
+        id : table[i][0],
+        name : table[i][1],
+        occupation : table[i][2],
+        age : table[i][3]
+    }
+    newTable.push(obj);
+}
