@@ -39,11 +39,13 @@ let newTable = [];
 // Loop to populate array with objects listed 
 for (let i = 1; i< table.length; i++) {
 
-    let obj = {
-        id : table[i][0],
-        name : table[i][1],
-        occupation : table[i][2],
-        age : table[i][3]
+    // Creating an empty object to house key value pairs
+    let obj = {}
+
+    // Nested loop to create key value pairs for each idividual array
+    for(let j = 0; j < table[0].length; j++) {
+        let key = table[0][j];
+        obj[key] = table[i][j];
     }
     newTable.push(obj);
 }
@@ -59,10 +61,10 @@ newTable.pop();
 
 // New person object created
 let new_person = {
-    id: '48',
-    name: 'Barry',
-    occupation: 'Runner',
-    age: '25'
+    Id: '48',
+    Name: 'Barry',
+    Occupation: 'Runner',
+    Age: '25'
 };
 
 // Inserting new person object into the new table array at index 1
@@ -70,10 +72,10 @@ newTable.splice(1, 0, new_person);
 
 // Creating another person object
 let another_person = {
-    id: '7',
-    name: 'Bilbo',
-    occupation: 'none',
-    age: '111'
+    Id: '7',
+    Name: 'Bilbo',
+    Occupation: 'none',
+    Age: '111'
 };
 
 // Adding another person object to the end of the new table array
@@ -88,7 +90,7 @@ for (i = 0; i < newTable.length; i++) {
     adding every value of age in the new table array
     to the ages variable every iteration
     */ 
-    ages += Number(newTable[i].age);
+    ages += Number(newTable[i].Age);
 
     // Logging a visual of what occurs within the loop
     console.log(ages);
